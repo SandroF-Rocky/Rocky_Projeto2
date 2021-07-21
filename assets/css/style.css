@@ -675,6 +675,7 @@ section.metodologia {
   padding-top: 40px;
   padding-left: 20px;
   padding-right: 5px;
+  padding-bottom: 50px;
   color: #B5B5B5;
 }
 
@@ -692,6 +693,7 @@ section.metodologia .metodologia_text p:first-of-type {
   margin-top: 30px;
   font-weight: bold;
   font-size: 13.5px;
+  line-height: 25px;
 }
 
 section.metodologia .metodologia_text p:last-of-type {
@@ -699,7 +701,7 @@ section.metodologia .metodologia_text p:last-of-type {
 }
 
 section.metodologia .metodologias_container {
-  height: 500px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -720,6 +722,8 @@ section.metodologia .metodologias_container {
 
 section.metodologia .metodologias_container .metodologia_single {
   padding-left: 15px;
+  padding-top: 10px;
+  margin-top: 30px;
 }
 
 section.metodologia .metodologias_container .metodologia_single p:first-of-type {
@@ -741,6 +745,50 @@ section.metodologia .metodologias_container .metodologia_single p:first-of-type:
 
 section.metodologia .metodologias_container .metodologia_single p:last-of-type {
   line-height: 25px;
+}
+
+section.metodologia .header_buttons {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding-right: 5px;
+  margin-left: -10px;
+}
+
+section.metodologia .header_buttons .header_button {
+  height: 65px;
+  width: 200px;
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid white;
+}
+
+section.metodologia .header_buttons .header_button span {
+  color: white;
+  font-size: 17px;
+  line-height: 65px;
+}
+
+section.metodologia .header_buttons .header_button:last-child {
+  background-color: #F89D24;
+  border: none;
+  margin-top: 18px;
 }
 
 section.apto {

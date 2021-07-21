@@ -480,6 +480,7 @@ section.metodologia{
     padding-top: 40px;
     padding-left: 20px;
     padding-right: 5px;
+    padding-bottom: 50px;
     color: #B5B5B5;
     .metodologia_text{
         width: 90%;
@@ -492,6 +493,7 @@ section.metodologia{
             margin-top: 30px;
             font-weight: bold;
             font-size: 13.5px;
+            line-height: 25px;
         }
         p:last-of-type{
             line-height: 25px;
@@ -499,11 +501,13 @@ section.metodologia{
     }
 
     .metodologias_container{
-        height: 500px;
+        height: auto;
         @include FlexCenter(column);
         justify-content: space-evenly;
         .metodologia_single{
             padding-left: 15px;
+            padding-top: 10px;
+            margin-top: 30px;
             p:first-of-type{
                 position: relative;
                 font-weight: bold;
@@ -525,6 +529,34 @@ section.metodologia{
             }
             
         }
+    }
+
+    .header_buttons{
+        width: 100%;
+        height: auto;
+        @include FlexCenter(column);
+        justify-content: space-around;
+        box-sizing: content-box;
+        padding-right: 5px;
+        margin-left: -10px;
+        .header_button{
+            height: 65px;
+            width: 200px;
+            border-radius: 6px;
+            text-align: center;
+            border: 1px solid white;
+            span{
+                color: white;
+                font-size: 17px;
+                line-height: 65px;
+            }
+        }
+        .header_button:last-child{
+            background-color: #F89D24;
+            border: none;
+            margin-top: 18px;
+        }
+
     }
     
 }
