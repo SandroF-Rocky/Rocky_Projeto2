@@ -22,16 +22,21 @@ $(function(){
                 items:1,
                 nav:true
             },
-            600:{
-                items:3,
-                nav:false
-            },
+
             1000:{
-                items:5,
+                items:1,
                 nav:true,
                 loop:false
             }
         }
     })
+
+    $('.interesse_button, .interesse_button_header').click(function(){
+        $('.form_container').addClass('active')
+    })
+    $('#mdiv').click(function(){
+        $('.form_container').removeClass('active')
+    })
+    
     
 })
