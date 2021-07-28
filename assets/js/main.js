@@ -5,13 +5,19 @@ $(function(){
         let this_li = $(this).html()
         
         $('li').each(function(e, li){
-            console.log(li.innerHTML, this_li)
+
             if(li.innerHTML != this_li){
                 $(this).removeClass('active')
             }
         })
 
 
+    })
+    $('li').click(function(){
+        
+        if(window.innerWidth > 1024){
+            $('span.competence_text').html($(this).children('p').html())
+        }
     })
     $('.owl-carousel').owlCarousel({
         loop:true,
